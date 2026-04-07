@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "name": "OrthoAgent",
+  "description": "MCP-native orthogonal verifiable AI trading agent. Executes trades via Kraken CLI, uses PRISM for orthogonal risk signals, and posts on-chain validation artifacts via ERC-8004.",
+  "capabilities": ["trading", "risk-management", "orthogonal-signal-analysis", "onchain-validation"],
+  "endpoints": {
+    "execution": "Kraken CLI (paper + live)",
+    "signals": "Strykr PRISM API"
+  },
+  "github": "https://github.com/olumide/orthoagent",
+  "owner": "YOUR_SEPOLIA_WALLET_ADDRESS_HERE"
+}
