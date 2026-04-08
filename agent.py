@@ -3,7 +3,8 @@ from prism import PrismClient
 import time
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(".env")
+load_dotenv(".env.local", override=True)
 
 def main():
     print("🚀 OrthoAgent starting...")
@@ -16,7 +17,7 @@ def main():
         factors = prism.get_orthogonal_factors()
         print("🧠 Orthogonal Factors:", factors)
 
-        ticker = client.get_ticker("BTCUSD")
+        ticker = client.get_ticker("XBTUSD")
         print("📈 Kraken Ticker:", ticker)
 
         if factors.get("recommendation") == "BUY":

@@ -4,7 +4,8 @@ from dotenv import load_dotenv
 from web3 import Web3
 from web3.middleware import geth_poa_middleware
 
-load_dotenv()
+load_dotenv(".env")
+load_dotenv(".env.local", override=True)
 
 class ERC8004Registry:
     def __init__(self):
